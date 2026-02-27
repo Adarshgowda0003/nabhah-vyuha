@@ -12,42 +12,385 @@ type ElectionType = 'Assembly' | 'Parliamentary';
 const constituenciesData: Record<StateName, Record<ElectionType, string[]>> = {
   'Karnataka': {
     'Assembly': [
-      'Anekal', 'Nippani', 'Chikkodi-Sadalga', 'Athani', 'Kagwad', 'Kudachi (SC)', 'Raibag (SC)', 
-      'Hukkeri', 'Arabhavi', 'Gokak', 'Yemkanmardi (ST)', 'Belgaum Uttar', 'Belgaum Dakshin', 
-      'Belgaum Rural', 'Khanapur', 'Kittur', 'Bailhongal', 'Saundatti Yellamma', 'Ramdurg', 
-      'Mudhol (SC)', 'Terdal', 'Jamkhandi', 'Bilgi', 'Badami', 'Bagalkot', 'Hungund', 
-      'Muddebihal', 'Devar Hippargi', 'Basavana Bagevadi', 'Babaleshwar', 'Bijapur City', 
-      'Nagathan (SC)', 'Indi', 'Sindagi', 'Afzalpur', 'Jevargi', 'Shorapur (ST)', 'Shahapur', 
-      'Yadgir', 'Gurmitkal', 'Chittapur (SC)', 'Sedam', 'Chincholi (SC)', 'Gulbarga Rural (SC)', 
-      'Gulbarga Dakshin', 'Gulbarga Uttar', 'Aland', 'Basavakalyan', 'Humnabad', 'Bidar South', 
-      'Bidar', 'Bhalki', 'Aurad (SC)', 'Raichur Rural (ST)', 'Raichur', 'Manvi (ST)', 
-      'Devadurga (ST)', 'Lingsugur (SC)', 'Sindhanur', 'Maski (ST)', 'Kushtagi', 
-      'Kanakagiri (SC)', 'Gangawati', 'Yelburga', 'Koppal', 'Shirahatti (SC)', 'Gadag', 'Ron', 
-      'Nargund', 'Navalgund', 'Kundgol', 'Dharwad', 'Hubli-Dharwad East (SC)', 
-      'Hubli-Dharwad Central', 'Hubli-Dharwad West', 'Kalghatgi', 'Haliyal', 'Karwar', 'Kumta', 
-      'Bhatkal', 'Sirsi', 'Yellapur', 'Hangal', 'Shiggaon', 'Haveri (SC)', 'Byadgi', 
-      'Hirekerur', 'Ranebennur', 'Hoovina Hadagali (SC)', 'Hagaribommanahalli (SC)', 
-      'Vijayanagara', 'Kampli (ST)', 'Siruguppa (ST)', 'Bellary Rural (ST)', 'Bellary City', 
-      'Sandur (ST)', 'Kudligi (ST)', 'Molakalmuru (ST)', 'Challakere (ST)', 'Chitradurga', 
-      'Hiriyur', 'Hosadurga', 'Holalkere (SC)', 'Jagalur (ST)', 'Harapanahalli', 'Harihara ', 
-      'Davanagere North', 'Davanagere South', 'Mayakonda (SC)', 'Channagiri', 'Honnali', 
-      'Shimoga Rural (SC)', 'Bhadravati', 'Shimoga', 'Tirthahalli', 'Shikaripura', 'Soraba', 
-      'Sagara', 'Byndoor', 'Kundapura', 'Udupi', 'Kapu', 'Karkala', 'Sringeri', 'Mudigere (SC)', 
-      'Chikmagalur', 'Tarikere', 'Kadur', 'Chikkanayakanahalli', 'Tiptur', 'Turuvekere', 
-      'Kunigal', 'Tumkur City', 'Tumkur Rural', 'Koratagere', 'Gubbi', 'Sira', 'Pavagada', 
-      'Madhugiri', 'Gauribidanur', 'Bagepalli', 'Chikkaballapur', 'Sidlaghatta', 'Chintamani', 
-      'Srinivaspur', 'Mulbagal (SC)', 'Kolar Gold Field (SC)', 'Bangarapet (SC)', 'Kolar', 
-      'Malur', 'Yelahanka', 'Krishnarajapuram', 'Byatarayanapura', 'Yeshwantpur', 
-      'Rajarajeshwarinagar', 'Dasarahalli', 'Mahalakshmi Layout', 'Malleshwaram', 'Hebbal', 
-      'Pulakeshinagar (SC)', 'Sarvagnanagar', 'C. V. Raman Nagar (SC)', 'Shivajinagar', 
-      'Shanti Nagar', 'Gandhi Nagar', 'Rajaji Nagar', 'Govindraj Nagar', 'Vijay Nagar', 
-      'Chamrajpet', 'Chickpet', 'Basavanagudi', 'Padmanabhanagar', 'B.T.M. Layout', 'Jayanagar', 
-      'Mahadevapura (SC)', 'Bommanahalli', 'Anekal', 'Atheybhata Malik', 'Bilekahalli', 
-      'Bommasandra', 'Varuna', 'T. Narsipur (SC)', 'Hanur', 'Kollegal (SC)', 'Chamarajanagar', 
-      'Gundlupet', 'Mandya', 'Shrirangapattana', 'Nagamangala', 'Krishnarajapete', 'Magadi', 
-      'Ramanagara', 'Kanakapura', 'Channapatna', 'Devanahalli', 'Nelamangala', 'Doddaballapur', 
-      'Madikeri', 'Virajpet', 'Periyapatna', 'Hunasuru', 'Heggadadevankote (ST)', 
-      'Nanjangud (SC)', 'Chamundeshwari', 'Krishnaraja', 'Chamarajapura', 'Narasimharajapura'
+      'Afzalpur',
+
+'Aland',
+
+'Anekal',
+
+'Arabhavi',
+
+'Arkalgud',
+
+'Arsikere',
+
+'Athani',
+
+'Aurad (SC)',
+
+'B.T.M. Layout',
+
+'Babaleshwar',
+
+'Badami',
+
+'Bagalkot',
+
+'Bagepalli',
+
+'Bailhongal',
+
+'Bangarapet (SC)',
+
+'Basavakalyan',
+
+'Basavana Bagevadi',
+
+'Basavanagudi',
+
+'Belgaum Dakshin',
+
+'Belgaum Rural',
+
+'Belgaum Uttar',
+
+'Bellary City',
+
+'Bellary Rural (ST)',
+
+'Beltangady',
+
+'Bhadravati',
+
+'Bhalki',
+
+'Bhatkal',
+
+'Bidar',
+
+'Bidar South',
+
+'Bijapur City',
+
+'Bilgi',
+
+'Bommanahalli',
+
+'Bommasandra',
+
+'Byadgi',
+
+'Byatarayanapura',
+
+'Byndoor',
+
+'C.V. Raman Nagar (SC)',
+
+'Challakere (ST)',
+
+'Chamaraja',
+
+'Chamarajanagar',
+
+'Chamundeshwari',
+
+'Channagiri',
+
+'Channapatna',
+
+'Chickpet',
+
+'Chikkaballapur',
+
+'Chikkodi-Sadalga',
+
+'Chikkanayakanahalli',
+
+'Chikmagalur',
+
+'Chincholi (SC)',
+
+'Chintamani',
+
+'Chitradurga',
+
+'Dasarahalli',
+
+'Davanagere North',
+
+'Davanagere South',
+
+'Devanahalli (SC)',
+
+'Devar Hippargi',
+
+'Devadurga (ST)',
+
+'Dharwad',
+
+'Doddaballapur',
+
+'Gadag',
+
+'Gandhi Nagar',
+
+'Gangawati',
+
+'Gauribidanur',
+
+'Gokak',
+
+'Govindraj Nagar',
+
+'Gulbarga Dakshin',
+
+'Gulbarga Rural (SC)',
+
+'Gulbarga Uttar',
+
+'Gubbi',
+
+'Gundlupet',
+
+'Gurmitkal',
+
+'Hagaribommanahalli (SC)',
+
+'Haliyal',
+
+'Hangal',
+
+'Hanur',
+
+'Harapanahalli',
+
+'Harihar',
+
+'Hassan',
+
+'Haveri (SC)',
+
+'Hebbal',
+
+'Heggadadevankote (ST)',
+
+'Hirekerur',
+
+'Hiriyur',
+
+'Holalkere (SC)',
+
+'Honnali',
+
+'Hosadurga',
+
+'Hoskote',
+
+'Hubli-Dharwad Central',
+
+'Hubli-Dharwad East (SC)',
+
+'Hubli-Dharwad West',
+
+'Hukkeri',
+
+'Hungund',
+
+'Humnabad',
+
+'Hunasuru',
+
+'Indi',
+
+'Jagalur (ST)',
+
+'Jamkhandi',
+
+'Jayanagar',
+
+'Jevargi',
+
+'K.R. Pura',
+
+'Kadur',
+
+'Kagwad',
+
+'Kalghatgi',
+
+'Kampli (ST)',
+
+'Kanakapura',
+
+'Kanakagiri (SC)',
+
+'Karkala',
+
+'Karwar',
+
+'Kaup',
+
+'Khanapur',
+
+'Kittur',
+
+'Kolar',
+
+'Kolar Gold Field (SC)',
+
+'Kollegala (SC)',
+
+'Koppa',
+
+'Koppal',
+
+'Koratagere (SC)',
+
+'Krishnaraja',
+
+'Krishnarajapete',
+
+'Krishnarajapuram',
+
+'Kudachi (SC)',
+
+'Kudligi (ST)',
+
+'Kumta',
+
+'Kundapura',
+
+'Kundgol',
+
+'Kunigal',
+
+'Kushtagi',
+
+'Lingsugur (SC)',
+
+'Madikeri',
+
+'Magadi',
+
+'Mahadevapura (SC)',
+
+'Mahalakshmi Layout',
+
+'Malavalli (SC)',
+
+'Malur',
+
+'Mandya',
+
+'Manvi (ST)',
+
+'Maski (ST)',
+
+'Mayakonda (SC)',
+
+'Molakalmuru (ST)',
+
+'Muddebihal',
+
+'Mudhol (SC)',
+
+'Mudigere (SC)',
+
+'Mulbagal (SC)',
+
+'Nagamangala',
+
+'Nagathan (SC)',
+
+'Nanjangud (SC)',
+
+'Narasimharaja',
+
+'Nargund',
+
+'Navalgund',
+
+'Nelamangala (SC)',
+
+'Nippani',
+
+'Padmanabhanagar',
+
+'Pavagada (SC)',
+
+'Periyapatna',
+
+'Pulakeshinagar (SC)',
+
+'Raichur',
+
+'Raichur Rural (ST)',
+
+'Rajaji Nagar',
+
+'Rajarajeshwarinagar',
+
+'Ramanagara',
+
+'Ramdurg',
+
+'Ranebennur',
+
+'Ron',
+
+'Sagar',
+
+'Sakleshpur (SC)',
+
+'Sandur (ST)',
+
+'Sarvagnanagar',
+
+'Saundatti Yellamma',
+
+'Sedam',
+
+'Shahapur',
+
+'Shanti Nagar',
+
+'Shiggaon',
+
+'Shikaripura',
+
+'Shimoga',
+'Shimoga Rural (SC)',
+'Shirahatti (SC)',
+'Shivajinagar',
+'Shorapur (ST)',
+'Shravanabelagola',
+'Shrirangapattana',
+'Sidlaghatta',
+'Sindagi',
+'Sindhanur',
+'Sira',
+'Sirsi',
+'Siruguppa (ST)',
+'Soraba',
+'Srinivaspur',
+'Sringeri',
+'Sullia (SC)',
+'T. Narasipur (SC)',
+'Tarikere',
+'Terdal',
+'Tiptur',
+'Tirthahalli',
+'Tumkur City',
+'Tumkur Rural',
+'Turuvekere',
+'Udupi',
+'Varuna',
+'Vijayanagara',
+'Vijay Nagar',
+'Virajpet',
+'Yadgir',
+'Yelahanka',
+'Yelburga','Yellapur','Yemkanmardi (ST)','Yeshwantpur'
     ],
     'Parliamentary': [
       'Chikkodi', 'Belgaum', 'Bagalkot', 'Bijapur (SC)', 'Gulbarga (SC)', 'Raichur (ST)', 
